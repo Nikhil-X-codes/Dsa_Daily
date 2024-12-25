@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+using namespace std;
 
 bool searchMatrix(std::vector<std::vector<int>>& matrix, int target) {
     if (matrix.empty() || matrix[0].empty()) {
@@ -29,7 +30,7 @@ bool searchMatrix(std::vector<std::vector<int>>& matrix, int target) {
 }
 
 int main() {
-    std::vector<std::vector<int>> matrix = {
+   vector<vector<int>> matrix = {
         {1, 3, 5, 7},
         {10, 11, 16, 20},
         {23, 30, 34, 60}
@@ -37,9 +38,9 @@ int main() {
     int target = 56;
 
     if (searchMatrix(matrix, target)) {
-        std::cout << "Element found!" << std::endl;
+        cout << "Element found!" << endl;
     } else {
-        std::cout << "Element not found!" << std::endl;
+        cout << "Element not found!" << endl;
     }
 
     return 0;
